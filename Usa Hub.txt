@@ -1,0 +1,268 @@
+-- Display notifications
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Pls wait",
+    Text = "1",
+    Duration = 1
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Pls wait",
+    Text = "2",
+    Duration = 2
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Pls wait",
+    Text = "3",
+    Duration = 3
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Opening! ",
+    Text = "",
+    Duration = 0.4
+})
+
+wait(3.5)
+
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("Usa Hub", "BloodTheme")
+
+-- Tabs
+local blox = window:NewTab("Blox Fruit")
+local bloxSection = blox:NewSection("Blox Fruit Section")
+
+local Jn = window:NewTab("Jn hh gaming script")
+local JnSection = Jn:NewSection("ONLY SCRIPT THAT JN HH GAMING ACTUALLY MADE")
+local JnSection2 = Jn:NewSection ("All Credit To Jn Hh Gaming sub to him")
+
+local Obby = window:NewTab("Obby")
+local ObbySection = Obby:NewSection("For Rage Quitter")
+
+local Blade = window:NewTab("Blade Ball")
+local BladeSection = Blade:NewSection("10 SCRIPT")
+
+local Admin = window:NewTab("Admin Commands")
+local AdminSection = Admin:NewSection("Admin Commands")
+
+local Pvp = window:NewTab("Pvp")
+local PvpSection = Pvp:NewSection("for games that battles")
+
+local Tab2 = window:NewTab("Credits & about script")
+local Tab2Section = Tab2:NewSection("Made By Alvine#0851")
+local Tab2Section2 = Tab2:NewSection("OVER 50+ SCRIPTS!")
+local Tab2Section3 = Tab2:NewSection("Pls use, I worked hard finding all scripts")
+
+local playerName = game.Players.LocalPlayer.Name
+Tab2Section:NewLabel("Welcome " .. playerName .. "!")
+
+local clipboardText = "Alvine#0851" -- Change this to the desired text
+
+Tab2Section:NewButton("Copy to Clipboard", "Click to copy Alvine#0851", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clipboard Copied",
+        Text = "copied to clipboard!",
+        Duration = 3
+    })
+
+    setclipboard(clipboardText)
+end)
+
+local jnClipboardText = "https://youtube.com/@JNHHGaming?si=yhmKszWRjkM73b_J" -- Change this to the desired text for JnSection
+
+JnSection:NewButton("sub jn hh gaming", "Click to copy jn gg gaming yt to clipboard", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clipboard Copied",
+        Text = "copied to clipboard!",
+        Duration = 3
+    })
+
+    setclipboard(jnClipboardText)
+end)
+
+-- Pvp Section
+PvpSection:NewButton("Hitbox Changer", "Increase Range *u can change*", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "Hitbox changer",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+end)
+
+PvpSection:NewButton("Lucky block", "Spawn Lucky block", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed!",
+        Text = "Lucky Block battleground",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://pastebin.com/raw/6nd0sNFC"))()
+end)
+
+-- Admin Commands Section
+AdminSection:NewButton("Infinite Yield", "Admin", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed!",
+        Text = "Infinite Yield",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+AdminSection:NewButton("Nameless Admin", "discontinued", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed!",
+        Text = "Nameless Admin",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+end)
+
+AdminSection:NewButton("Fate Admin", "", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed!",
+        Text = "Fate Admin",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+end)
+
+AdminSection:NewButton("CMD X", "Only for PC I think", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed!",
+        Text = "CMD X",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+AdminSection:NewButton("Leg Admin", "", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed!",
+    Text = "Leg Admin",
+    Duration = 3
+})
+print("Clicked/Executed Script!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/leg1337/legadmv2/main/legadminv2.lua'))()
+end)
+
+-- Blade Ball Section
+BladeSection:NewButton("Bedol Hub", "Don't know Old/new", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed!",
+        Text = "Bedol Hub",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+end)
+
+BladeSection:NewButton("OMG HUB", "Dont know still works", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "Omg Hub",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/animesouls/main/.Ok"))()
+end)
+
+BladeSection:NewButton("Noxine Hub", "Dont know still works", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "Noxine Hub",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fbisghosts/Noxine-Blade-Ball-Beta-/main/NOX.lua"))()
+end)
+
+-- Obby Section
+ObbySection:NewButton("Anti fall", "make u dont fall", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "Anti Fall ",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/AntiFall/main/Script"))()
+end)
+
+ObbySection:NewButton("Fly Gui", "Make u fly", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "Fly Gui",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+end)
+
+-- JN HH GAMING Section
+JnSection:NewButton("All Tycoon v3", "", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "All Tycoon v3",
+        Duration = 3
+    })
+    
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://freenote.biz/raw/SkG1nrBqE8", true))()
+end)
+
+JnSection:NewButton("In Plain Sight 2", "", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "In Plain Sight 2",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://freenote.biz/raw/7Uv0nvk8cy", true))()
+end)
+
+JnSection:NewButton("Break in 2", "", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "Break in 2",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://freenote.biz/raw/qLlMYwbVNd", true))()
+end)
+
+-- Blox Fruit Section
+bloxSection:NewButton("Makori Hub", "", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "Makori Hub",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/NewHubX.txt"))()
+end)
+
+bloxSection:NewButton("nickel hub", "", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "Nickel Hub",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
+end)
+
+bloxSection:NewButton("uranium Hub *Paid i think*", "", function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Clicked/Executed",
+        Text = "Uranium Hub",
+        Duration = 3
+    })
+    print("Clicked/Executed Script!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/bf", true))()
+end)
